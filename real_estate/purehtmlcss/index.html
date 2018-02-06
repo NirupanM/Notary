@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example | React SimpleTabs</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+  <div id="innerbox">
+  <div id="prev"></div>
+<div id="next"></div>
+  <ul class="tabs-nav">
+    <li class="tab-active"><a class="tbclass" href="#tab-1" rel="nofollow">Property Listings</a>
+    </li>
+    <!-- <li class="tab-active tbclass"><a class="tbclass" href="#tab-2" rel="nofollow">Sell</a>
+    </li> -->
+    <!-- <li class="tbclass"><a class="tbclass" href="#tab-3" rel="nofollow">Rent</a>
+    </li> -->
+    <li class="tab-active">
+        <div class="dropdown">
+    <button class="dropbtn">NOTARY 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#tab-41">Notary Listings</a>
+      <a href="#tab-42">Company Listings</a>
+      <a href="#tab-43">Personal Listings</a>
+    </div>
+  </div>
+  </li>
+<!--     <li class="tab-active"><a href="#tab-4" rel="nofollow">Notary</a>
+      
+    </li> -->
+    <!-- <li class="tbclass"><a class="tbclass" href="#tab-5" rel="nofollow">Mortgage</a>
+    </li>
+    <li class="tab-active tbclass"><a class="tbclass" href="#tab-6" rel="nofollow">Agent</a>
+    </li> -->
+
+</ul>
+
+
+<div class="tabs-stage" >
+
+
+
+    <div id="tab-1" style="">
+
+    <h3 id="title-house">$1324 / 3br - 1151ft2 - ☀ Fresno Apartment Living, Bike Racks, Concierge (1164 E Perrin Ave, Fresno, CA 93720)</h3>
+
+        <!-- <p>The available listings for the preferred location and other criteria are shown below sequentially.</p> -->
+        <!-- <div id="tab1_img"> </div> -->
+    </div>
+
+
+
+
+    <div id="tab-2" style="display: block;">
+        
+    </div>
+        <div id="tab-3" style="display: block;">
+        <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+    </div>
+        <div id="tab-41" style="display: block;">
+
+
+
+
+        <form>
+
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="City" name="email" maxlength="75" style="margin-left: -29%;"></p>
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="Zipcode" name="email" maxlength="75"></p>
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="24 Hours" name="email" maxlength="75"></p>
+
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="Printer" name="email" maxlength="75"></p>
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="Mortgage Signings" name="email" maxlength="75"></p>
+
+          <p><!-- <label for="id_email">Email address:</label> --> <input class="txt-class" id="id_email" type="text" placeholder="Wireless Cards" name="email" maxlength="75"></p>
+
+          <span class=""><button class="">Submit</button></span>
+
+
+        </form>
+
+
+<!-- <ul  class="tabs-ntry" style="width: 100%;">
+    <li class="tab-active" style="width: 25%;"><a href="#tab-41" rel="nofollow" style="width: 100%;">Notary</a>
+    </li>
+    <li class="tab-active" style="width: 25%;"><a href="#tab-42" rel="nofollow" style="width: 100%;">Company</a>
+    </li>
+    <li class="" style="width: 25%;"><a href="#tab-43" rel="nofollow" style="width: 100%;">Personal</a>
+        
+
+    </li>
+    <span style="width: 25%;"></span>
+    </ul> -->
+
+
+
+<h2 class="tbl-hdr" style="display: none">Notary Listings</h2>
+
+
+<table id="ntry" style="display: none" title="Notary Listings">
+<caption>Notary Listings</caption>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Phone</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>4082138231</td>
+        <td>Fresno</td>
+            <td>CA</td>
+            <td>93650</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>2134245657</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93651</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>4345340923</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93652</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>7657563213</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93653</td>
+</tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>4367669876</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93654</td>
+  </tr> 
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>7548784365</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93655</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>6458769809</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93656</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>3236548765</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93657</td>
+</tr>
+</table>
+
+</div>
+
+
+  <div id="tab-42" style="display: block;">
+
+<!-- <h2 class="tbl-hdr">Company Listings</h2> -->
+<table id="cmpny" title="Company Listings">
+  <caption>Company Listings</caption>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>View Website</th>
+    <th>Comments</th>
+  </tr>
+  <tr>
+    <td>Notary Signing</td>
+    <td>2436 East 4TH Street #216
+Long Beach, CA 90814</td>
+<td>(866) 344-7558</td>
+    <td><a href="http://www.1notarysigning.com/" target="_blank" style="text-decoration: underline; color:blue">View website</a></td>
+        <td>#1 Notary Signing is a leader in the Signing Document Industry. As a service Company, it is our goal to consistently exceed the expectations of our customers.</td>
+  </tr>
+  <tr>
+    <td>24 Hour Mobile Notary Public - CA NOTARIES ONLY</td>
+    <td>P.O. Box 831
+Carmichael, CA 95609</td>
+    <td>1-800-536-7233</td>
+    <td><a href="http://www.a24hournotary.com/" target="_blank" style="text-decoration: underline; color:blue">View website</a></td>
+    <td>The A-24 Hour Mobile Notary Public, Fingerprinting, and Live Scan Service provides mobile notary public, fingerprinting, Live Scan, loan signing, and process serving services for the State of California and Florida, mobile fingerprinting, Live Scan, and loan signing services nationwide, and mobile fingerprinting and Live Scan services internationally.</td>
+  </tr>
+  <tr>
+    <td>All States Notary, Inc</td>
+    <td>13101 Washington Blvd., Suite 238
+Los Angeles, CA 90066</td>
+    <td>310-566-7383</td>
+    <td><a href="http://www.allstatesnotary.com/" target="_blank" style="text-decoration: underline; color:blue">View website</a></td>
+    <td>Are you a mobile notary public (signing agent notary) who is available to accept assignments for loan packages and other documents that need to be notarized? All States Notary, Inc. is a document signing service operating in all 50 states. We are constantly looking for notaries public nationwide to join our team.</td>
+  </tr>
+  <tr>
+    <td>America's Best Closers</td>
+    <td>13194 US Hwy. 301 S Suite 351
+Riverview, FL 33578</td>
+    <td>813-620-9028</td>
+    <td><a href="http://www.americasbestclosers.com//notary_signup.html" target="_blank" style="text-decoration: underline; color:blue">View website</a></td>
+    <td>Please contact America's Best Closers to request our Independent Contractors Agreement. You can reach us at 813-620-9028 between 9-6pm EST.</td>
+</tr>
+  <tr>
+    <td>American Signing Connection</td>
+    <td>1595 Peachtree Parkway, Suite 204-303
+Cumming, GA 30041</td>
+    <td>770-205-5788</td>
+    <td><a href="http://www.americansigningconnection.com/" target="_blank" style="text-decoration: underline; color:blue">View website</a></td>
+    <td>Vendors (Signing Agents, Title Producers, Notary, Abstractors and Attorneys). To register, simply click on vendor registration tab and input your information into our system. Our office will contact you to qualify your experience and give you a rating based on same. Be sure to read our vendor policy on our expectations. If you can give the customer service that our clients depend on, please register.</td>
+  </tr>
+</table>
+</div>
+
+  <div id="tab-43" style="display: block;">
+
+
+<!-- <h2 class="tbl-hdr">Personal Listings</h2> -->
+<table id="prsnl" title="Personal Listings">
+<caption>Personal Listings</caption>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Phone</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>4082138231</td>
+        <td>Fresno</td>
+            <td>CA</td>
+            <td>93650</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>2134245657</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93651</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>4345340923</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93652</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>7657563213</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93653</td>
+</tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>4367669876</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93654</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>7548784365</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93655</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>6458769809</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93656</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>3236548765</td>
+    <td>Fresno</td>
+            <td>CA</td>
+            <td>93657</td>
+</tr>
+</table>
+
+
+<!-- <table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+</tr>
+</table> -->
+
+        
+    </div>
+        <div id="tab-5" style="display: block;">
+        <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+    </div>
+        <div id="tab-6" style="display: block;">
+        <p>Phasellus pharetra aliquet viverra. Donec scelerisque tincidunt diam, eu fringilla urna auctor at.</p>
+    </div>
+</div>
+
+
+    
+    <!-- <div id="tabs-container">
+    <div id="tb">
+    <ul class="tabs-menu">
+        <li class="current"><a href="#tab-1">Buy</a></li>
+        <li><a href="#tab-2">Sell</a></li>
+        <li><a href="#tab-3">Rent</a></li>
+        <li><a href="#tab-4">Notary</a></li>
+        <li><a href="#tab-4">Mortgage</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="tab">
+        <div id="tab-1" class="tab-content">
+            <p>L</p>
+        </div>
+        <div id="tab-2" class="tab-content">
+            <p>D </p>
+        
+        </div>
+        <div id="tab-3" class="tab-content">
+            <p>Du </p>
+        </div>
+        <div id="tab-4" class="tab-content">
+            <p>Pr</p> 
+    </div>
+ 
+ </div> -->
+
+<!-- <div id="desc">
+
+<div id="beds">
+  
+
+</div>
+<div id="bed-count">
+  <span class="iconText"></span>
+</div>
+<div id="baths">
+  
+</div>
+<div id="bath-count">
+  <span class="iconText" ></span>
+</div>
+<div id="sqft"></div>
+<div id="sqft-count">
+  <span class="iconText"></span>
+</div>
+<div id="sqftL"></div>
+<div id="sqftL-count">
+  <span class="iconText"></span>
+</div>
+</div> -->
+
+
+<div id="outerDT">
+<textarea id="descText">
+3 Beds
+2 Baths
+1050 SQFT
+2000 SQFT
+✔ FREE utilities and janitorial services
+✔ FREE T1 Internet
+✔ FREE mailbox
+✔ FREE professional reception lobby 
+✔ FREE conference rooms
+✔ FREE kitchenettes (fridge, microwave, etc.)
+✔ FREE and ample parking
+✔ Server room
+✔ Furnished offices available
+✔ 100% HVAC
+✔ On-site management
+✔ 24/7 access
+</textarea>
+</div>
+
+
+<!-- <h2 id="bed-count">1</h2>
+<div id="bath-count">1</div>
+<div id="sqft-count">1</div>
+<div id="sqftL-count">1</div> -->
+
+
+<div id="gallery">
+
+<ul id="gl_ul">
+  <li  class="gl_li">
+    <img id="gl_img1" class="gl_img" />
+  </li>
+  <li  class="gl_li">
+    <img id="gl_img2" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img3" class="gl_img" />
+  </li>
+    <li class="gl_li">
+    <img id="gl_img4" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img5" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img6" class="gl_img" />
+  </li>
+    <li class="gl_li">
+    <img id="gl_img7" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img8" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img9" class="gl_img" />
+  </li>
+    <li class="gl_li">
+    <img id="gl_img10" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img11" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img12" class="gl_img" />
+  </li>
+    <li class="gl_li">
+    <img id="gl_img13" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img14" class="gl_img" />
+  </li>
+  <li class="gl_li">
+    <img id="gl_img15" class="gl_img" />
+  </li>
+</ul>
+
+
+
+</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="index.js"></script>
+
+  
+  </div>  
+  </body>
+</html>

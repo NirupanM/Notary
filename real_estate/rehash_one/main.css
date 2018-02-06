@@ -1,0 +1,331 @@
+.btn-search {
+	  background: #424242;
+	  border-radius: 0;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #1c1c1c;
+	}
+	.btn-search:link, .btn-search:visited {
+	  color: #fff;
+	}
+	.btn-search:active, .btn-search:hover {
+	  background: #1c1c1c;
+	  color: #fff;
+	}
+
+	.img_tile{
+		width: 279px;
+		height: 293px;
+		border-radius: 6px;
+
+		 -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    /*margin: 10px;*/
+	}
+
+
+  .hr_tile{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+       margin-right: 6px;
+     -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    /*margin: 10px;*/
+  }
+
+	.row_margin_bottom{
+		margin-bottom: 1%;
+	}
+
+	.panel_margin{
+		/*margin:4px;*/
+	}
+
+	.blk_space{
+		margin-top: 12px;
+	}
+
+	.img__description_layer {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ /* background: rgba(36, 62, 206, 0.6);*/
+  color: black;
+  font-weight: bolder;
+  /*visibility: hidden;
+  opacity: 0;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+
+	}
+
+
+
+.img__bed {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ /* background: rgba(36, 62, 206, 0.6);*/
+  color: black;
+  font-weight: bolder;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+
+	}
+
+
+	.img__bath {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+ /* background: rgba(36, 62, 206, 0.6);*/
+  color: black;
+  font-weight: bolder;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+
+	}
+
+
+.img__sq {
+	position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ /* background: rgba(36, 62, 206, 0.6);*/
+  color: black;
+  font-weight: bolder;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+
+	}
+
+	.img__sqL {
+	position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+ /* background: rgba(36, 62, 206, 0.6);*/
+  color: black;
+  font-weight: bolder;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+
+	}
+
+	.p-font{
+		color: black;
+    display: flex;
+    font-size: 21px;
+    font-weight: 900;
+	}
+
+
+	.panel_margin:hover .img__bed {
+  visibility: visible;
+  opacity: 1;
+}
+
+.panel_margin:hover .img__bath {
+  visibility: visible;
+  opacity: 1;
+}
+
+.panel_margin:hover .img__sq {
+  visibility: visible;
+  opacity: 1;
+}
+
+.panel_margin:hover .img__sqL {
+  visibility: visible;
+  opacity: 1;
+}
+
+#overlay_test{
+	top:10%;
+	left: 8%;
+	z-index: 100;
+	position: fixed;
+}
+
+/*#selected-times-container {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 30px 0;
+}
+
+.choose-date-times.choose-date-times {
+    text-align: left;
+}
+
+.choose-date-time .calendar-prev-next, .reschedule-choose-date-time .calendar-prev-next {
+    padding-bottom: 30px;
+}
+
+.choose-date-time .date, .reschedule-choose-date-time .date {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: -5px;
+}
+
+.choose-date-time .date-heading, .reschedule-choose-date-time .date-heading {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.choose-date-time .choose-date-times .choose-time input[type="radio"]+label:hover, .reschedule-choose-date-time .choose-time input[type="radio"]+label:hover, .choose-date-time .date .choose-time-actions, .date .choose-time input[type="radio"]:checked+label, .reschedule-choose-date-time .date .choose-time input[type="radio"]:checked+label, .reschedule-choose-date-time .date .choose-time-actions, .choose-date-time .date-head-text, .reschedule-choose-date-time .date-head-text {
+    border-color: #0066cc;
+    color: #0066cc;
+}
+
+.choose-date-time .day-of-week, .reschedule-choose-date-time .day-of-week {
+    font-weight: 700;
+}
+
+.choose-date-time .date-secondary, .reschedule-choose-date-time .date-secondary {
+    color: #686868;
+    font-size: 14px;
+}
+
+.choose-date-time .choose-time, .reschedule-choose-date-time .choose-time {
+    position: relative;
+    text-align: center;
+}
+
+.choose-date-time .choose-time .time-selection, .reschedule-choose-date-time .choose-time .time-selection {
+    display: none;
+}
+
+.choose-date-time .choose-time input[type=radio]+label, .reschedule-choose-date-time .choose-time input[type=radio]+label {
+    border: 2px solid transparent;
+}
+
+.more-times-available {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 100px;
+    width: 20%;
+    max-width: 170px;
+    font-size: 14px;
+}
+
+a, a:hover, a:focus, a.btn-link {
+    color: #0066cc;
+}
+
+a, a.btn-link {
+    color: #31976f;
+    text-decoration: underline;
+}
+
+.choose-date-time .calendar-next, .reschedule-choose-date-time .calendar-next {
+    float: right;
+}
+*/
+
+
+
+table.calendar {
+    margin-bottom: 0;
+}
+
+table.calendar > thead > tr > th {
+    text-align: center;
+}
+
+table.calendar > tbody > tr > td {
+    height: 20px;
+}
+
+table.calendar > tbody > tr > td > div {
+    //padding: 8px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+
+table.calendar > tbody > tr > td.has-events {
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 4px;
+}
+
+table.calendar > tbody > tr > td.has-events > div {
+    background-color: #08C;
+    border-left: 1px solid white;
+}
+
+table.calendar > tbody > tr > td.has-events > div:first-child {
+    border-left: 0;
+    margin-left: 1px;
+}
+
+table.calendar > tbody > tr > td.has-events > div.practice {
+    opacity: 0.7;
+}
+table.calendar > tbody > tr > td.conflicts > div > span.title {
+    //color: red;
+}
+table.calendar > tbody > tr > td.max-conflicts > div {
+    background-color: red;
+    color: white;
+}
+
+table.calendar > tbody > tr > td.has-events > div > span {
+    display: block;
+    text-align: center;
+}
+table.calendar > tbody > tr > td.has-events > div > span a {
+    color: white;
+}
+
+table.calendar > tbody > tr > td.has-events > div > span.title {
+    font-weight: bold;
+}
+
+table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > td {
+    border: 0;
+}
+
+.table tbody tr.hover td, .table tbody tr.hover th {
+    background-color: whiteSmoke;
+}
